@@ -19,4 +19,4 @@
 *БЭМ
 
 Ссылка на GITHUB
-https://ominyaeva.github.io/russian-travel/
+https://ominyaeva.github.io/mesto/
