@@ -1,9 +1,9 @@
-.popup_text {
+.popup__text {
     border: 0;
     padding: 0;
 }
 
-.popup_text:active, :hover, :focus {
+.popup__text:active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
 }

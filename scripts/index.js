@@ -3,7 +3,7 @@ const popupCloseButtonElement = popupElement.querySelector(".popup__close");
 const popupOpenButtonElement = document.querySelector(".profile__open-popup");
 
 const heart = document.querySelectorAll(".element__like");
-const popupMain = popupElement.querySelector(".popup_text");
+const popupMain = popupElement.querySelector(".popup__text");
 const popupForm = popupElement.querySelector(".popup__content");
 const profileInfo = document.querySelector(".profile__info");
 
