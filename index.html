@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,79 +18,77 @@
     <section class="profile">
         <img src="./images/avatar-kusto.png" class="profile__avatar" alt="Аватар" />
         <div class="profile__block">
-            <div class="profile__info"></div>
-            <button type="button" class="profile__open-popup">
-                <img src="./images/edit.svg" class="profile__edit-button" alt="Кнопка Редактировать" />
-            </button>
+            <div class="profile__info">
+                <h1 class="profile__title">Жак-Ив Кусто</h1>
+                <p class="profile__subtitle">Исследователь океана</p>
+            </div>
+            <button type="button" class="profile__open-popup"></button>
         </div>
-        <img src="./images/add.svg" class="profile__add-button" alt="Кнопка Добавить" />
+        <button type="button" class="profile__add-button"></button>
     </section>
 
     <section class="elements">
-        <div class="element">
+        <article class="element">
             <img class="element__image" src="./images/karachaevsk.jpg" alt="Фото Карачаевск" />
             <div class="element__description">
                 <h2 class="element__title">Карачаевск</h2>
-                <img src="./images/whiteHeart.svg" class="element__like" alt="Лайк" />
+                <button type="button" class="element__like"></button>
             </div>
-        </div>
-        <div class="element">
+        </article>
+        <article class="element">
             <img class="element__image" src="./images/gora-elbrus.jpg" alt="Фото Гора Эльбрус" />
             <div class="element__description">
                 <h2 class="element__title">Гора Эльбрус</h2>
-                <img src="./images/whiteHeart.svg" class="element__like" alt="Лайк" />
+                <button type="button" class="element__like"></button>
             </div>
-        </div>
-        <div class="element">
+        </article>
+        <article class="element">
             <img class="element__image" src="./images/dombai.jpg" alt="Фото Домбай" />
             <div class="element__description">
                 <h2 class="element__title">Домбай</h2>
-                <img src="./images/whiteHeart.svg" class="element__like" alt="Лайк" />
+                <button type="button" class="element__like"></button>
             </div>
-        </div>
-        <div class="element">
+        </article>
+        <article class="element">
             <img class="element__image" src="./images/gora-elbrus.jpg" alt="Фото Гора Эльбрус" />
             <div class="element__description">
                 <h2 class="element__title">Гора Эльбрус</h2>
-                <img src="./images/whiteHeart.svg" class="element__like" alt="Лайк" />
+                <button type="button" class="element__like"></button>
             </div>
-        </div>
-        <div class="element">
+        </article>
+        <article class="element">
             <img class="element__image" src="./images/dombai.jpg" alt="Фото Домбай" />
             <div class="element__description">
                 <h2 class="element__title">Домбай</h2>
-                <img src="./images/whiteHeart.svg" class="element__like" alt="Лайк" />
+                <button type="button" class="element__like"></button>
             </div>
-        </div>
-        <div class="element">
+        </article>
+        <article class="element">
             <img class="element__image" src="./images/karachaevsk.jpg" alt="Фото Карачаево-Черкесия" />
             <div class="element__description">
                 <h2 class="element__title">Карачаево-Черкесия</h2>
-                <img src="./images/whiteHeart.svg" class="element__like" alt="Лайк" />
+                <button type="button" class="element__like"></button>
             </div>
-        </div>
+        </article>
     </section>
 </main>
 
+<footer class="footer">
+    <p class="footer__copyright">© 2020 Mesto Russia</p>
+</footer>
 <div class="popup">
     <div class="popup__container">
-        <button type="button" class="popup__close">
-            <img src="./images/close.svg" alt="Кнопка Закрыть" />
-        </button>
-        <form class="popup__content">
-            <h1 class="popup__title">Редактировать профиль</h1>
+        <button type="button" class="popup__close"></button>
+        <form name="ProfileForm" class="popup__content">
+            <h2 class="popup__title">Редактировать профиль</h2>
             <fieldset class="popup__text">
-                <input type="text" class="popup__item-name" placeholder="Имя" />
-                <input type="text" class="popup__item-description" placeholder="О себе" />
+                <input type="text" name="Name" class="popup__input popup__input_name" placeholder="Имя" />
+                <input type="text" name="Description" class="popup__input popup__input_description" placeholder="О себе" />
             </fieldset>
             <button type="submit" class="popup__save">Сохранить</button>
         </form>
     </div>
 </div>
-
-<footer class="footer">
-    <p class="footer__copyright">© 2020 Mesto Russia</p>
-</footer>
 <script src="./scripts/index.js" defer></script>
 </body>
 </html>

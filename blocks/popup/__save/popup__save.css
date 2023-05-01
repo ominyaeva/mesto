@@ -4,16 +4,16 @@
     background-color: #000000;
     border: none;
     border-radius: 2px;
-    color: #FFFFFF;
+    color: #fff;
     font-size: 18px;
     line-height: 100%;
-    margin-top: 48px;
+    margin-top: 46px;
     cursor: pointer;
     padding: 0;
 }
 
 .popup__save:hover {
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 600px) {

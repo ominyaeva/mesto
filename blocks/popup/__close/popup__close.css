@@ -4,20 +4,25 @@
     height: 32px;
     display: flex;
     position: absolute;
-    top: -36px;
-    right: -36px;
-    background: none;
+    top: -40px;
+    right: -40px;
+    background-image: url("../../../images/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .popup__close:hover {
     opacity: 0.6;
 }
 
-
 @media screen and (max-width: 600px) {
     .popup__close {
+        background-image: url("../../../images/close-mini.svg");
         width: 20px;
         height: 20px;
+        top: -36px;
         right: 0;
     }
 }

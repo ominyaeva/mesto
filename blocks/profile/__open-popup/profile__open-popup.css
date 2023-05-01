@@ -1,10 +1,13 @@
 .profile__open-popup {
     width: 24px;
     height: 24px;
-    border: solid 1px #FFFFFF;
-    background-color: #000000;
+    border: solid 1px #fff;
     cursor: pointer;
     margin: 15px 0 0 0;
+    background-image: url("../../../images/edit.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .profile__open-popup:hover {
