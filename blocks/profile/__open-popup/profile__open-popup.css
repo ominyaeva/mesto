@@ -8,6 +8,10 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover;
+    padding-left: 11px;
+    padding-right: 11px;
+
 }
 
 .profile__open-popup:hover {

@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    flex-shrink: 0;
 }
 
 .element__like:hover {

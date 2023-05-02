@@ -7,8 +7,8 @@ const popupForm = popupElement.querySelector(".popup__content");
 
 let profileName = document.querySelector(".profile__title");
 let profileDescription = document.querySelector(".profile__subtitle");
-let popupInputName = popupMain.querySelector(".popup__input_name");
-let popupInputDescription = popupMain.querySelector(".popup__input_description");
+let popupInputName = popupMain.querySelector(".popup__input_input_name");
+let popupInputDescription = popupMain.querySelector(".popup__input_input_description");
 const openPopup = function () {
     popupElement.classList.add("popup_opened");
     popupInputName.value = profileName.textContent;
@@ -26,7 +26,7 @@ function handleFormSubmit(evt) {
     evt.preventDefault();
     profileName.textContent = popupInputName.value;
     profileDescription.textContent = popupInputDescription.value;
-    popupForm.addEventListener("submit", closePopup);
+    closePopup();
 }
 
 popupForm.addEventListener("submit", handleFormSubmit);
