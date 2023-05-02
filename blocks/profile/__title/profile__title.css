@@ -2,7 +2,7 @@
     font-size: 42px;
     line-height: normal;
     font-weight: 500;
-    margin: 0 0 16px 0;
+    margin: 0 0 4px 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -17,6 +17,6 @@
 @media screen and (max-width: 700px) {
     .profile__title {
         font-size: 27px;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
     }
 }

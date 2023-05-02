@@ -16,7 +16,6 @@
     .profile__info {
         justify-content: center;
         align-items: center;
-        flex-direction: row;
         max-width: 190px;
         margin-left: 19px;
     }
