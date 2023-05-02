@@ -14,8 +14,6 @@
 
 @media screen and (max-width: 700px) {
     .profile__info {
-        justify-content: center;
-        align-items: center;
         max-width: 190px;
         margin-left: 19px;
     }
