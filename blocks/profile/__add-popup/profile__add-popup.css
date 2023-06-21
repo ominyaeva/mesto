@@ -1,4 +1,4 @@
-.profile__add-button {
+.profile__add-popup {
     background-image: url("../../../images/add.svg");
     width: 150px;
     height: 50px;
@@ -11,12 +11,12 @@
     border-radius: 2px;
 }
 
-.profile__add-button:hover {
+.profile__add-popup:hover {
     opacity: 0.6;
 }
 
 @media screen and (max-width: 700px) {
-    .profile__add-button {
+    .profile__add-popup {
         width: 282px;
         margin: 34px 19px 0 19px;
         padding: 0;

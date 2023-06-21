@@ -1,4 +1,4 @@
-.elements {
+.cards {
     max-width: 880px;
     width: 100%;
     display: grid;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 920px) {
-    .elements {
+    .cards {
         max-width: 584px;
         margin-left: auto;
         margin-right: auto;
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 620px) {
-    .elements {
+    .cards {
         max-width: 282px;
     }
 }
