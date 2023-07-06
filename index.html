@@ -38,12 +38,14 @@
         <button type="button" class="popup__close popup__profile-close"></button>
         <div class="popup__content">
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form name="ProfileForm">
+            <form class="form" name="ProfileForm" novalidate>
                 <fieldset class="popup__text">
-                    <input type="text" name="Name" class="popup__input popup__input_input_name" placeholder="Имя" />
-                    <input type="text" name="Description" class="popup__input popup__input_input_description" placeholder="О себе" />
+                    <input type="text" name="profile-name" class="form__input form__input_input_name" placeholder="Имя" required minlength="2" maxlength="40" />
+                    <span id="profile-name-error" class="error"></span>
+                    <input type="text" name="profile-description" class="form__input form__input_input_description" placeholder="О себе" required minlength="2" maxlength="200" />
+                    <span id="profile-description-error" class="error"></span>
                 </fieldset>
-                <button type="submit" class="popup__save">Сохранить</button>
+                <button type="submit" class="form__button">Сохранить</button>
             </form>
         </div>
     </div>
@@ -54,12 +56,14 @@
         <button type="button" class="popup__close popup__add-close"></button>
         <div class="popup__content">
             <h2 class="popup__title">Новое место</h2>
-            <form name="NewCardForm">
+            <form class="form" name="NewCardForm" novalidate>
                 <fieldset class="popup__text">
-                    <input type="text" name="Name" class="popup__input popup__input_input_title" placeholder="Название" />
-                    <input type="text" name="Description" class="popup__input popup__input_input_link" placeholder="Ссылка на картинку" />
+                    <input type="text" name="card-name" class="form__input form__input_input_title" placeholder="Название" required minlength="2" maxlength="30" />
+                    <span id="card-name-error" class="error"></span>
+                    <input type="url" name="card-link" class="form__input form__input_input_link" placeholder="Ссылка на картинку" required />
+                    <span id="card-link-error" class="error"></span>
                 </fieldset>
-                <button type="submit" class="popup__save">Создать</button>
+                <button type="submit" class="form__button">Создать</button>
             </form>
         </div>
     </div>
@@ -87,5 +91,6 @@
 </template>
 
 <script src="./scripts/index.js"></script>
+<script src="./scripts/validate.js"></script>
 </body>
 </html>
