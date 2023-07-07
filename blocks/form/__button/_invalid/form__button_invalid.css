@@ -3,8 +3,6 @@
     color: rgba(0, 0, 0, 1);
     opacity: 0.2;
     background: #fff;
-}
-
-.form__button_invalid:hover {
+    cursor: default;
     pointer-events: none;
 }

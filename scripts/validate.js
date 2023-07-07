@@ -44,10 +44,6 @@ function setEventListener(formElement, config) {
 
     toggleButtonState(submitButtonElement, formElement.checkValidity(), config);
 
-    formElement.addEventListener("submit", (e) => {
-        e.preventDefault();
-    });
-
     [...inputsList].forEach((inputItem) => {
         inputItem.addEventListener("input", () => {
             checkInputValidity(inputItem, formElement, config);

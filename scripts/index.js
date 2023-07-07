@@ -51,10 +51,12 @@ const initialCards = [
 
 function openPopup(popup) {
     popup.classList.add("popup_opened");
+    document.addEventListener('keydown', closeByEsc)
 }
 
 function closePopup(popup) {
     popup.classList.remove("popup_opened");
+    document.addEventListener('keydown', closeByEsc)
 }
 
 popupOpenButtonElement.addEventListener("click", function (evt) {
@@ -74,19 +76,17 @@ closeButtons.forEach((button) => {
     button.addEventListener("click", () => closePopup(popup));
 });
 
-function closePopupEsc(evt) {
+function closeByEsc(evt) {
     if (evt.key === "Escape") {
-        const popup = document.querySelector(".popup_opened");
-        closePopup(popup);
+        const openedPopup = document.querySelector('.popup_opened');
+        closePopup(openedPopup);
     }
 }
-
-document.addEventListener("keydown", closePopupEsc);
 
 function closePopupOverlay() {
     popups.forEach((el) => {
         el.addEventListener("mousedown", function (evt) {
-            if (evt.target.classList.contains("popup_opened") || evt.target.classList.contains("popup__close")) {
+            if (evt.target.classList.contains("popup_opened")) {
                 closePopup(evt.target);
             }
         });
@@ -149,6 +149,8 @@ function addCardFormSubmit(evt) {
         link: popupAddLink.value,
     });
     evt.target.reset();
+    evt.submitter.classList.add('form__button_invalid')
+    evt.submitter.disabled = true;
     closePopup(addPopup);
 }
 
